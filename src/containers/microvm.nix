@@ -108,7 +108,7 @@ in
       microvm = {
         hypervisor = "qemu"; # switch to "cloud-hypervisor" later if you want
         vcpu = workerCount; # match vCPUs to the number of workers we’ll launch
-        mem = 16384; # MiB. Example: 16 GiB VM. Change this, everything else recomputes.
+        mem = 65536; # MiB. Example: 16 GiB VM. Change this, everything else recomputes.
 
         # Ballooning introduces jitter under steady pressure like fuzzing → keep off.
         balloon = false;
